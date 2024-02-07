@@ -62,15 +62,6 @@
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
               <li><a href="#">Dropdown 2</a></li>
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
@@ -324,14 +315,13 @@ the growth process.</p>
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
             <div class="content">
-              <h3>Minus hic non reiciendis ea possimus at quia.</h3>
-              <p>Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor. Aut iusto ipsa. Eos ipsum nobis ipsa soluta itaque perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi possimus ut delectus dicta.
-              <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt porro magni qui necessitatibus dolorem at animi cupiditate.</p>
+              <h3>Get An Instant Quote!</h3>
+              <p>Unlock your potential with eStores Global's Instant Quotation feature, streamlining your journey towards a passion-driven career or entrepreneurial venture. Simply input your preferences, and receive a personalized quote tailored to your aspirations, empowering you to take the next step towards success with confidence.</p>
             </div>
           </div>
 
           <div class="col-lg-5" data-aos="fade">
-            <form action="forms/quote.php" method="post" class="php-email-form">
+            <form  onsubmit="sendEmail(); reset(); return false;">
               <h3>Get a quote</h3>
               <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
               <div class="row gy-3">
@@ -353,9 +343,9 @@ the growth process.</p>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <div class="loading"></div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+                  <div class="sent-message"></div>
 
                   <button type="submit">Get a quote</button>
                 </div>
@@ -363,6 +353,30 @@ the growth process.</p>
               </div>
             </form>
           </div><!-- End Quote Form -->
+      
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+       <script>
+       
+          function sendEmail(){
+           Email.send({
+                Host : "smtp.elasticemail.com",
+                Port : "2525";
+                Username : "siddhantsundar2016@gmail.com",
+                Password : "E5E6BB9981760528A5F0DC29857BADD527A9",
+                To: 'siddhantsundar2016@gmail.com',
+                From: document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body: "Name:" + document.getElementById("name").value
+          + "<br> Email:" + document.getElementById("email").value
+
+           + "<br> Phone no:" + document.getElementById("phone").value
+
+            + "<br> Message:" + document.getElementById("message").value
+             }).then(
+             message => alert("Message Sent")
+            );
+             }
+ </script>
 
         </div>
 
@@ -726,14 +740,14 @@ the growth process.</p>
 
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/COMPANY_LOGOS/288px-ITC_Limited_Logo.svg.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/COMPANY_LOGOS/kisspng-toyota-86-car-logo-general-motors--5b7b8e3e4f5df9.0098577215348239983251.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/COMPANY_LOGOS/logo_Red-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/COMPANY_LOGOS/pngwing.com (1).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/COMPANY_LOGOS/pngwing.com (2).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/COMPANY_LOGOS/pngwing.com.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/COMPANY_LOGOS/Reserve_Bank_of_India_logo.svg.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
          
           </div>
           <div class="swiper-pagination" style="padding-top: 00px;"></div>
@@ -744,6 +758,36 @@ the growth process.</p>
 
     </section>
 
+
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2> Our College Tie-ups</h2>
+          <p>Join our 100+ College clients that trusts eSTORES</p>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="./assets/img/CLGS_LOGO/Presidency.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/CLGS_LOGO/DAU.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/CLGS_LOGO/bishop_girls.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/CLGS_LOGO/Dr-Ambedkar-Management-Studies-Logo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/CLGS_LOGO/isbr.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/CLGS_LOGO/jyothi_nivas.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/CLGS_LOGO/New_Horizon_College_of_Engineering_logo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/CLGS_LOGO/SJES_NEW.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/img/CLGS_LOGO/surana-logo-1.png" class="img-fluid" alt=""></div>
+
+          </div>
+          <div class="swiper-pagination" style="padding-top: 00px;"></div>
+        </br>
+      </br>
+        </div>
+      </div>
+
+    </section>
 
     <section id="team" class="team">
 
