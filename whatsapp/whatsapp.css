@@ -7,6 +7,21 @@
     color: #444;
 }
 
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+    /* Tablet and desktop styles */
+    .container {
+        width: 70%; /* Adjusted width for tablets */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Desktop styles */
+    .container {
+        width: 50%; /* Adjusted width for larger desktop screens */
+    }
+}
+
 body {
     height: 100vh;
     display: flex;
