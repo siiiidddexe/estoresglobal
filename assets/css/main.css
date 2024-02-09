@@ -22,6 +22,7 @@
   --color-default: #364d59;
   --color-primary: #feb900;
   --color-secondary: #52565e;
+  background-color: #000;
 }
 
 /* Smooth scroll behavior */
@@ -36,11 +37,13 @@ body {
   font-family: var(--font-default);
   color: var(--color-default);
   overflow-x: hidden;
+  background-color: #000;
 }
 
 a {
   color: var(--color-primary);
   text-decoration: none;
+  
 }
 
 a:hover {
@@ -169,7 +172,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: #000;
   padding: 60px 0;
 }
 
@@ -177,7 +180,7 @@ section {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
-  background: #fff;
+  background: #0000;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
 }
@@ -962,6 +965,32 @@ section {
   margin-bottom: 0;
 }
 
+.clients .clients-slider .swiper-slide img {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.clients .clients-slider .swiper-slide img:hover {
+  opacity: 1;
+}
+
+.clients .clients-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d5d7da;
+  opacity: 1;
+  border: 1px solid ;
+}
+
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #feb900;
+}
+
 /*--------------------------------------------------------------
 # Our Projects Section
 --------------------------------------------------------------*/
@@ -970,6 +999,7 @@ section {
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
+  color: #ffff;
 }
 
 .projects .portfolio-flters li {
@@ -1041,7 +1071,7 @@ section {
   right: 0;
   font-size: 16px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffff;
 }
 
 .projects .portfolio-content .portfolio-info .preview-link,
@@ -1093,7 +1123,7 @@ section {
   min-height: 200px;
   box-shadow: 0px 2px 20px rgba(82, 86, 94, 0.1);
   position: relative;
-  background: #fff;
+  background: #000;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1108,7 +1138,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #000;
+  color: #fff;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1147,6 +1177,7 @@ section {
   transform: scale(-1, -1);
 }
 
+
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 15px auto 15px auto;
@@ -1155,6 +1186,7 @@ section {
 .testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  color: #fff;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
@@ -1520,7 +1552,7 @@ section {
 
 .project-details .swiper-button-prev:after,
 .project-details .swiper-button-next:after {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 24px;
   border-radius: 50%;
@@ -1579,7 +1611,7 @@ section {
 .project-details .portfolio-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
-  color: #838893;
+  color: #83893;
   font-size: 14px;
 }
 
@@ -1599,7 +1631,7 @@ section {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color: var(--color-secondy);
 }
 
 .project-details .portfolio-description p {
