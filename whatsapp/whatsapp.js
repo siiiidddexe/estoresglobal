@@ -9,12 +9,12 @@ function sendToWhatsapp(){
 	let name2 = document.getElementById('name2').value;
 	let topic = document.getElementById('topics').value;
 	var url = "https://wa.me/" + number + "?text="
-	+ "*Name :*" +name+ "%0a"
-	+ "*Email :*" +email+ "%0a"
-	+ "*College Address :*" +message+ "%0a"
-	+ "*Service Type:*" +select+ "%0a"
-	+ "*Timings:*" +select2+ "%0a"
-	+ "*College Name:*" +name2+ "%0a"
-	+ "*Topic: *" +topic+ "%0a"
+	+ "*Name :*" +" "+name+" "+ "%0a"
+	+ "*Email :*" +" "+email+" "+ "%0a"
+	+ "*College Address :*" +" "+message+" "+ "%0a"
+	+ "*Service Type:*" +" "+select+" "+ "%0a"
+	+ "*Timings:*" +" "+select2+" "+ "%0a"
+	+ "*College Name:*" +" "+name2+" "+ "%0a"
+	+ "*Topic:*" +" "+topic+" "+ "%0a"
 	window.open(url, '_blank').focus();
 }
