@@ -61,6 +61,7 @@ select {
     background-color: #eee;
     border: none;
     outline: none;
+    border-radius: 10px;
 }
 
 button {
