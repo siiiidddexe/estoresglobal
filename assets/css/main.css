@@ -2784,6 +2784,46 @@ section {
   color: #fff;
 }
 
+.google-review {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.star-rating {
+  display: inline-block;
+  width: 80px;
+}
+
+.star-rating span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/PngItem_5154815.png"); /* Replace with your star image sprite */
+  background-size: 80px 16px; /* Adjust based on your image sprite */
+}
+
+.full-star {
+  background-position: 0 0;
+}
+
+.half-star {
+  background-position: -16px 0;
+}
+
+.review-count {
+  font-size: 14px;
+  color: gray;
+  margin-left: 10px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin-left: auto;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
