@@ -139,10 +139,10 @@ document.addEventListener('DOMContentLoaded', () => {
    * Init swiper slider with 1 slide at once in desktop view
    */
   new Swiper('.slides-1', {
-    speed: 600,
+    speed: 400,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -161,10 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
    * Init swiper slider with 2 slides at once in desktop view
    */
   new Swiper('.slides-2', {
-    speed: 600,
+    speed: 400,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -189,12 +189,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+  
+//////////////////////////#####   slider the company and colleges speed and count maneger  ####///////////////////
 
   new Swiper('.clients-slider', {
     speed: 400,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
