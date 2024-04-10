@@ -357,7 +357,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+
   margin-right: 6px;
 }
 
@@ -972,6 +972,8 @@ section {
 
 .clients .clients-slider .swiper-slide img:hover {
   opacity: 1;
+  transition: 0.1 ease-in-out;
+  transform: scale(1.6);
 }
 
 .clients .clients-slider .swiper-pagination {
@@ -2879,7 +2881,7 @@ section {
 }
 
 .footer .footer-top .footer-info .logo img {
-  max-height: 40px;
+
   margin-right: 6px;
 }
 
