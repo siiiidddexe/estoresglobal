@@ -5,8 +5,103 @@
  <link rel="stylesheet" href="whatsapp.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
  <style>
+   /* Provided CSS styles */
 
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     resize: none;
+     font-family: 'poppins', sans-serif;
+     color: #444;
+   }
 
+   /* Media queries for responsiveness */
+   @media screen and (min-width: 768px) {
+     /* Tablet and desktop styles */
+     .container {
+         width: 70%; /* Adjusted width for tablets */
+     }
+   }
+
+   @media screen and (min-width: 992px) {
+     /* Desktop styles */
+     .container {
+         width: 50%; /* Adjusted width for larger desktop screens */
+     }
+   }
+
+   body {
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: rgb(2,0,36);
+     background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 27%, rgba(255,149,0,1) 100%);
+   }
+
+   .container {
+     background-color: white;
+     border-radius: 5px;
+     padding: 30px;
+     width: 450px;
+   }
+
+   .container h2 {
+     margin-bottom: 20px;
+     text-align: center;
+   }
+
+   .container p {
+     margin-bottom: 20px;
+   }
+
+   form div {
+     display: flex;
+     justify-content: space-between;
+     gap: 5px;
+   }
+
+   span input,
+   textarea,
+   select {
+     width: 100%;
+     padding: 10px;
+     margin-top: 5px;
+     background-color: #eee;
+     border: none;
+     outline: none;
+     border-radius: 10px;
+   }
+
+   button {
+     background-color: #000;
+     padding: 10px 30px;
+     border-radius: 5px;
+     color: white;
+     border: none;
+     margin-top: 20px;
+   }
+
+   button:hover {
+     background-color: #000;
+     cursor: pointer;
+   }
+
+   footer {
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+     padding: 20px;
+     background-color: transparent;
+   }
+
+   .social-icons a {
+     color: white;
+     margin: 0 10px;
+     font-size: 20px;
+   }
  </style>
 </head>
 <body>
@@ -42,50 +137,49 @@
      <br/><br/>
     </span>
     <span>
-
-
-     <label for="argb">Time to visit?</label>
-      <input type="time" id="argb" name="argb" placeholder="HH:MM:AM/PM">
+     <label for="argb">Date of the visit?</label>
+     <input type="date" id="argb" name="argb" placeholder="HH:MM:AM/PM">
      <br/><br/>
-
-
     </span>
    </div>
    <span>
     <label for="name">College Name</label><br/>
     <input id="name2" type="text" placeholder="College Name">
-
-	<br/><br/>
-
-   </span>
-   <span>
-
-  
-    <label for="topics">Choose a Topics For The Service</label><br/>
-    <input id="topics" type="text" placeholder="Choose a Topic">
-
-
-
-
-
     <br/><br/>
    </span>
    <br/>
-   <label for="message">College Address</label><br/>
-   <textarea name="" id="message" rows="10" placeholder="College Address"></textarea>
+   <div>
+    <span>
+     <label for="nos">Number Of Students</label><br/>
+     <input id="nos" type="number" placeholder="Number Of Students">
+    </span>
+    <span>
+     <label for="phone">Phone Number</label><br/>
+     <input id="phone" type="tel" placeholder="Phone Number">
+    </span>
+   </div>
+   <br/>
+   <label for="topics">Choose a Department (MBA, BBA, BCA, etc.)</label><br/>
+   <select class="form-select" id="topics" aria-label="Default select example" placeholder="Choose Service">
+    <option value="Choose Service" selected>Choose Department</option>
+    <option value="BBA">BBA</option>
+    <option value="MBA">MBA</option>
+    <option value="B.COM">B.COM</option>
+    <option value="M.COM">M.COM</option>
+    <option value="BCA">BCA</option>
+    <option value="MCA">MCA</option>
+    <option value="BSC">BSC</option>
+    <option value="JOURNALISM">JOURNALISM</option>
+    <option value="AVIATION">AVIATION</option>
+   </select>
+   <br/>
+   <textarea id="message" rows="10" placeholder="College Address"></textarea>
    <button onclick="sendToWhatsapp()" style="width: 100%;" >Submit</button>
-  <a data-aos="fade-up" data-aos-delay="200" href="../index.html#get-started" class="btn-get-started" style="display: block; text-align: center; text-decoration: none; color: white; background-color: #e53653; padding: 10px 30px; border-radius: 5px; margin-top: 20px;">Go Back</a>
+   <a data-aos="fade-up" data-aos-delay="200" href="../index.html#get-started" class="btn-get-started" style="display: block; text-align: center; text-decoration: none; color: white; background-color: #000; padding: 10px 30px; border-radius: 5px; margin-top: 20px;">Go Back</a>
   </form>
  </div>
 
  <footer>
    <div class="social-icons">
      <a href="https://www.facebook.com/estoresmarket/"><i class="fab fa-facebook-f"></i></a>
-     <a href="mailto:brandestores@gmail.com"><i class="fas fa-envelope"></i></a>
-     <a href="https://www.instagram.com/estores_global/"><i class="fab fa-instagram"></i></a>
-     <a href="https://in.linkedin.com/in/estores-global-91a56b20b"><i class="fab fa-linkedin"></i></a>
-   </div>
- </footer>
- <script src="whatsapp.js"></script>
-</body>
-</html>
+     <a href="
