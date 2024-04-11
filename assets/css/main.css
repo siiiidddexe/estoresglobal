@@ -61,10 +61,6 @@ h6 {
 }
 
 
-.coloured{
-
-  
-}
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -113,6 +109,18 @@ section {
 @media (min-width: 1199px) {
   .section-header p {
     max-width: 60%;
+  }
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header-text h1 {
+    font-size: 18px; /* Adjust font size for smaller screens */
   }
 }
 
